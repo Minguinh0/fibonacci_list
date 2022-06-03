@@ -1,0 +1,11 @@
+fibonacci = []
+sum = 0
+i = 1
+while sum < 55:
+    while len(fibonacci) < 2:
+        fibonacci.append(i)
+    sum = fibonacci[i-1] + fibonacci[i]
+    fibonacci.append(sum)
+    i += 1
+
+print(fibonacci)
